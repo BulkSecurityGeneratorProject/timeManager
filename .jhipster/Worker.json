@@ -1,0 +1,42 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "workTime",
+            "otherEntityName": "workTime",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "worker"
+        },
+        {
+            "relationshipName": "expense",
+            "otherEntityName": "expense",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "worker"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "currentMonthHours",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "totalHours",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "totalExpenses",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20160705072511",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "worker",
+    "pagination": "no"
+}

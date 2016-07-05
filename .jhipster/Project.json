@@ -1,0 +1,37 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "workTime",
+            "otherEntityName": "workTime",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "project"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": []
+        },
+        {
+            "fieldName": "currentMonthHours",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "totalHours",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20160705072311",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "project",
+    "pagination": "no"
+}

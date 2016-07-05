@@ -1,0 +1,30 @@
+
+<div>
+    <h2><span>Worker</span> {{vm.worker.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{vm.worker.name}}</span>
+        </dd>
+        <dt><span>Current Month Hours</span></dt>
+        <dd>
+            <span>{{vm.worker.currentMonthHours}}</span>
+        </dd>
+        <dt><span>Total Hours</span></dt>
+        <dd>
+            <span>{{vm.worker.totalHours}}</span>
+        </dd>
+        <dt><span>Total Expenses</span></dt>
+        <dd>
+            <span>{{vm.worker.totalExpenses}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>
